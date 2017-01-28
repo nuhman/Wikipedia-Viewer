@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+body{
+  background:#323232;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+    text-align: center;
+}
+#searchForm{
+  background: linear-gradient(#1b1b1b, #3b5998);
+  border-radius:5px;
+  border:1px solid #000;
+  padding:20px;
+  display:inline-block;
+  position: relative;
+  z-index: 1;
+  margin-top: 5%;
+
+}
+input{
+  background: #222;	
+  background: linear-gradient(#333, #222);	
+  border: 1px solid #444;
+  border-radius: 5px 0 0 5px;
+  color: #888;
+  font-size:13px;
+  height:40px;
+  float:left;
+  display:block;
+  margin:0;
+  padding:0 10px;
+  width:200px;
+}
+button{
+  background: #222;	
+  background: linear-gradient(#333, #222);	
+  border: 1px solid #444;
+  border-radius: 5px 0 0 5px;
+  color: #888;
+  font-size:13px;
+  height:40px;
+  float:right;
+  display:block;
+  margin:0;
+  padding:0 10px;
+}
+input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #3b5998;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+button:active , button:hover{
+  background: #292929;
+	background: linear-gradient(#393939, #292929);
+	color: #3b5998;
+}
+@keyframes glow {
+    0% {
+		border-color: #3b5998;
+		box-shadow: 0 0 5px #3b5998, inset 0 0 5px #3b5998, 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #3b5998;
+		box-shadow: 0 0 20px #3b5998, inset 0 0 10px #3b5998, 0 2px 0 #000;
+    }
+}
+  
+.well{
+    background:#453272;
+    background: linear-gradient(#1b1b1b, #3b5998);
+    color:white;
+    text-align:left;
+}
+.well > a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+.well:hover{
+    color: #efe;
+    background: linear-gradient(#3b5998,#1b1b1b );
+    
+}
+
+.logox{
+    color:white;
+    text-align: center;
+}
+.logox >a{
+    position:relative;
+    color:#fff;
+    text-decoration: none;
+}
+.logox >a:hover{
+    color:#fff;
+}
+.logox >a:before{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom:0;
+    left:0;
+    background: #fff;
+    visibility: hidden;
+     transform: scaleX(0);
+     transition: all 0.3s ease-in-out 0s;
+}
+.logox >a:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
